@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+.head{
+    background-image: url(../image/Earth.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position: center;
+
+}
+.containerOne{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: transparent;
+}
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-top: 10px;
+    color: rgb(208, 204, 204);
+}
+.boxOne{
+    height: 400px;
+    width: 300px;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem rgb(107, 107, 75);
+    background-color: #2b165b;
+    transition: all .5s;
+}
+.boxOne>a{
+    color: white;
+    text-align: center;
+}
+.boxOne:hover{
+    transform: scale(1.1);
+    background-color: #101b3e;
+    box-shadow: 0 0 1.5rem black;
+}
+
+.boxOne-contain{
+        width: 500px;
+        padding: 4rem  3.5rem;
+        background-color:rgb(199, 195, 195);
+        /* box-shadow: 0 0 1rem white; */
+        border-radius: .5rem;
+        background-color: #3d549f;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        background: transparent;
+        backdrop-filter: blur(30px);
+}
+.boxOne-contain>h3{
+    color: rgb(215, 213, 213);
+}
+.boxOne-contain>h2{
+    color: rgb(204, 201, 201);
+}
+.containerTwo{
+    background-color: #2d6e97;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.boxTwo{
+    height: 400px;
+    width: 400px;
+    background-color: #d6cccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s;
+    flex: 1;
+    background-color: #3d549f;
+}
+.boxTwo i{
+    font-size: 2rem;
+   text-align: center;
+}
+/* .boxTwo:hover{
+    background-color: white;
+    border: 2px solid whitesmoke;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem black;
+    transform: rotate(360deg);
+    
+} */
+.boxTwo-contain{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    flex: 1;
+    background-color: #e68e8e;
+}
+.boxTwo-contain > h2,
+p{
+   color:whitesmoke;
+}
+.containerThree{
+    background-color: #d6cccc;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../image/web.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.boxThree{
+    height: 400px;
+    width: 250px;
+    border: 2px solid whitesmoke;
+    border-radius: .5rem;
+    box-shadow: 0 0 1rem white;
+    transition: all .5s;
+     background-color: #2d6e97;
+     background: transparent;
+
+}
+.boxThree:hover{
+  box-shadow: 0 0 1.5rem black;
+  transform: scale(1.2);
+  background-color: #3d549f;
+}
+
+
+.footer{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* background-color:  #2d6e97; */
+    background-color: #101b3e;
+
+}
+
+.footer h2{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.social-media>a {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #a0a1a5;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media .messenger:hover {
+    background: white;
+    color: blue;
+    box-shadow: 0 0 1rem rgb(232, 226, 226);
+}
+
+.social-media .instagram:hover {
+    background: white;
+    color: #d62976;
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .tiktok:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .facebook:hover {
+    background: white;
+    color: rgba(6, 55, 249, 0.795);
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .whatsapp:hover {
+    background: white;
+    color: rgb(10, 205, 10);
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+
+.copyright{
+    text-align: center;
+    color: whitesmoke;
+    font-size: larger;
+  
+}
+.copyright p{
+    font-size: 2.2rem;
+    font-weight: 900;
+}

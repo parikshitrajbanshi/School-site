@@ -1,0 +1,392 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+    display: none;
+}
+.heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(18, 43, 91, 0.6);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.heading > a{
+    text-decoration: none;
+
+}
+
+.logo {
+    color: bisque;
+}
+
+.logo:hover {
+    color: whitesmoke;
+
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.nav-bar a:hover {
+    color: whitesmoke;
+}
+
+
+
+.nav-bar a {
+    text-decoration: none;
+    color: bisque;
+    font-size: large;
+    font-weight: 700;
+}
+
+.World-section {
+    font-size: 0;
+}
+
+.World-section img {
+    /* height: 700px; */
+    width: 100%;
+    position: relative;
+}
+
+
+.World .Hello-world {
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(47, 45, 40, 0.5);
+    box-shadow: 0 0 .5rem white;
+    color: #b6aca7;
+    top: 40%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 1rem;
+    font-size: larger;
+    font-weight: 900;
+    transition: .6s all;
+}
+
+.World .Hello-world:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 2.5rem white;
+    background-color: rgba(0, 0, 0,0.7);
+    backdrop-filter:blur(20px);
+
+}
+
+
+
+.Hello-world h2 {
+    padding: 2rem 2rem 0 3rem;
+    color: whitesmoke;
+}
+
+.Hello-world h1 {
+    padding: 0 3rem 2rem;
+    color:whitesmoke;
+}
+
+/*   about Me */
+
+.AboutMe .About-image>img {
+    height: 600px;
+    width: 100%;
+    position: relative;
+}
+
+.back {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/neuron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+.back-contain .About-image{
+  border-radius: 50%;
+  overflow: hidden;
+  /* border: 6px solid white; */
+}
+.back-contain .About-image>img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.back-contain .About-image>img:hover{
+   transform: scale(1.1);
+   filter: grayscale(10%);
+}
+
+
+
+.back-contain {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.About-contain  > h2,
+h1{
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height:1.3 ;
+    color: white;
+}
+
+.btn{
+    display: inline-block;
+    font-size:1.5rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    box-shadow: 0 0 2rem aqua;
+    padding: .5rem 1rem;
+    color:blue;
+    background-color:white;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: aqua;
+    color: black;
+    box-shadow: none;
+}
+
+.btn2{
+    display: inline-block;
+    font-size:1.5rem;
+    font-weight: 600;
+    border-radius: 3rem;
+    box-shadow: 0 0 4rem black;
+    padding: .5rem 1rem;
+    color:blue;
+    background-color:white;
+    text-decoration: none;
+}
+
+.btn2:hover{
+    background-color: rgb(240, 244, 244);
+    color: black;
+    box-shadow: none;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    margin: 3rem 1.5rem 3rem 0;
+    border: 2px solid #32a7d3;
+    color: #32a7d3;
+    background-color: rgba(9, 9, 9,0.5);
+    border-radius: 50%;
+    transition: .4s ease;
+
+}
+.social-media .fb:hover{
+    background-color: aqua;
+    color:blue ;
+    box-shadow: 0 0 1.5rem aqua;
+    border: solid aqua ;
+}
+
+.social-media .mes:hover{
+    background-color: aqua;
+    color:blue;
+    box-shadow: 0 0 1.5rem aqua;
+    border: solid aqua ;
+}
+
+.social-media .app:hover{
+    background-color: aqua;
+    color:green;
+    box-shadow: 0 0 1.5rem aqua;
+    border: solid aqua ;
+}
+
+.social-media .inst:hover{
+    background-color: aqua;
+    color:red;
+    box-shadow: 0 0 1.5rem aqua;
+    border: solid aqua ;
+}
+
+
+/* learning */
+
+.learning{
+    position: relative;
+}
+.image-learn {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/aqua-middle.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* background-attachment: fixed; */
+    
+
+}
+
+.center-element{
+     /* background-color: blue; */
+    /* height: 300px;
+    width: 200px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.learn-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 10rem;
+    border-radius: 7px;
+    background-color:rgba(18, 43, 91, 0.6);
+
+    backdrop-filter: blur(15px);
+    /* background-color: rgba(184, 184, 199, 0.6); */
+    transition: .3s all;
+    
+}
+.learn-contain:hover{
+    color: black;
+    background-color: hwb(0 100% 0% / 0.004);
+    box-shadow: .5rem .5rem 1rem #333;
+}
+.learn-contain>h2{
+    color:aqua;
+}
+
+.project >h1{
+    color: bisque;
+    text-align: center;
+}
+.project{
+    background-color: #032e3e;
+    height: 600px;
+}
+.card{
+     height: 300px;
+     width: 600px;
+     background-color: rgb(163, 157, 157);
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     flex-direction: column;
+     box-shadow: 0 .5rem 1.5rem whitesmoke;
+     transition: all .9s;
+}
+.card > h3{
+  font-size: 2rem;
+}
+.card > a{
+    text-align: center;
+    padding: 2rem;
+    background-color: rgb(163, 157, 157);
+    border-radius: 50%;
+    box-shadow: 0 0 1.5rem black;
+    transition: all .5s;
+}
+.card>a:hover{
+
+   transform: scale(1.3);
+   color: white;
+   box-shadow: 0 0 1.5rem white;
+   background-color:  rgb(163, 157, 157);
+
+
+}
+.card:hover{
+        background-color: rgb(224, 214, 214);
+        box-shadow: 0 0  1.5rem white;
+
+ }
+.project-body{
+    margin-top:2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: transparent;
+}
+
+.social-media>a {
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #a0a1a5;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    border: none;
+}
+
+
+
+.social-media .messenger:hover {
+    background: white;
+    border: none;
+    color: blue;
+    box-shadow: 0 0 1rem rgb(232, 226, 226);
+}
+
+.social-media .instagram:hover {
+    background: white;
+    border: none;
+    color: #d62976;
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .tiktok:hover {
+    background: white;
+    border: none;
+    color: black;
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .facebook:hover {
+    background: white;
+    border: none;
+    color: rgba(6, 55, 249, 0.795);
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.social-media .whatsapp:hover {
+    background: white;
+    border: none;
+    color: rgb(10, 205, 10);
+    box-shadow: 0 0 1rem rgb(223, 215, 215);
+}
+
+.copyright>p{
+text-align: center;
+color: white;
+}
